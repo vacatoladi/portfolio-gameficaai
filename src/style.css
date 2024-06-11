@@ -49,3 +49,38 @@ body {
 
         line-height: 2;
 }
+
+
+
+.oque-gamifica {
+        width: 450px;
+        height: 600px;
+
+        padding: 40px;
+
+        background-color: #fff;
+
+        border: solid 15px #cf5830;
+        border-radius: 30px;
+
+        color: black;
+        font-family: "anta";
+
+        position: absolute;
+        top: 5%;
+        right: 5%;
+}
+
+.oque-gamifica h2 {
+        margin-bottom: 40px;
+
+        font-size: 30px;
+        text-align: center;
+}
+
+.oque-gamifica p {
+        font-size: 16px;
+        text-align: justify;
+
+        line-height: 2;
+}
