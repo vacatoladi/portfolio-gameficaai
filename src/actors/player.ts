@@ -1,4 +1,4 @@
-import { Actor, Color, Engine, Keys, vec } from "excalibur";
+import { Actor, CollisionType, Color, Engine, Keys, vec } from "excalibur";
 
 export class Player extends Actor {
 
@@ -10,7 +10,8 @@ export class Player extends Actor {
             width: 32,
             height:32,
             name:"Jogador",
-            color: Color.Red
+            color: Color.Red,
+            collisionType: CollisionType.Active
         })
     }
 
@@ -61,12 +62,12 @@ export class Player extends Actor {
                 this.vel.y = 0
             }
 
-            if(event.key == Keys.A || event.key == Keys.ArrowLeft || event.key == Keys.D || event.key == Keys.ArrowRight){
-                this.vel.x = 0
-            }
-            if(event.key == Keys.W || event.key == Keys.ArrowUp || event.key == Keys.S || event.key == Keys.ArrowDown){
-                this.vel.y = 0
-            }
+            // if(event.key == Keys.A || event.key == Keys.ArrowLeft || event.key == Keys.D || event.key == Keys.ArrowRight){
+            //     this.vel.x = 0
+            // }
+            // if(event.key == Keys.W || event.key == Keys.ArrowUp || event.key == Keys.S || event.key == Keys.ArrowDown){
+            //     this.vel.y = 0
+            // }
 
 
         })
