@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="29" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="40">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="29" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="43">
  <tileset firstgid="1" source="tileset_paredes.tsx"/>
  <tileset firstgid="8285" source="tileset_biblioteca.tsx"/>
  <tileset firstgid="8829" source="tileset_generic.tsx"/>
@@ -125,7 +125,16 @@
 </data>
  </layer>
  <objectgroup id="10" name="spawnpoint">
-  <object id="38" name="player_spawn" x="463" y="528.333">
+  <object id="38" name="spawnpoint" x="464.313" y="531.333">
+   <point/>
+  </object>
+  <object id="40" name="npcSpawnPoint_a" x="428" y="389.333">
+   <point/>
+  </object>
+  <object id="41" name="npcSpawnPoint_b" x="457.333" y="390">
+   <point/>
+  </object>
+  <object id="42" name="npcSpawnPoint_c" x="488" y="393.333">
    <point/>
   </object>
  </objectgroup>
@@ -177,7 +186,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="7" name="colisao de abudabe" width="29" height="20" visible="0" locked="1" offsetx="138" offsety="100">
+ <layer id="7" name="colisao de abudabe" width="29" height="20" visible="0" locked="1" offsetx="138" offsety="90">
   <properties>
    <property name="solid" type="bool" value="true"/>
   </properties>
