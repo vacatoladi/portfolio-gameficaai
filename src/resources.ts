@@ -1,4 +1,4 @@
-import { ImageFiltering, ImageSource, Loader } from "excalibur";
+import { ImageFiltering, ImageSource, Loader, Sound } from "excalibur";
 import { TiledResource } from "@excaliburjs/plugin-tiled"; 
 
 import sword from "./images/sword.png";
@@ -20,6 +20,13 @@ import npcASpriteSheet from "./sprites/npcA.png"
 import npcBSpriteSheet from "./sprites/npcB.png"
 import npcCSpriteSheet from "./sprites/npcC.png"
 
+import caseAImage from "./images/caseA.png"
+import caseBImage from "./images/caseB.png"
+import caseCImage from "./images/caseC.png"
+
+import ritmo from "./sounds/ritmo.mp3"
+
+
 
 
 export const Resources = {
@@ -40,7 +47,12 @@ export const Resources = {
       {path:"tileset_estoque.tsx",output:tsxEstoquePath},
       {path:"tileset_biblioteca.tsx",output:tsxBibliotecaPath}
     ]
-  })
+  }),
+  CaseAImage: new ImageSource(caseAImage,{ filtering: ImageFiltering.Pixel }),
+  CaseBImage: new ImageSource(caseBImage,{ filtering: ImageFiltering.Pixel }),
+  CaseCImage: new ImageSource(caseCImage,{ filtering: ImageFiltering.Pixel }),
+  RitmoBGM: new Sound(ritmo),
+
 } as const;
 
 export const loader = new Loader();

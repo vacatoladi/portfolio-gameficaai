@@ -73,7 +73,7 @@ export class historyScene extends Scene{
     }
 
     onDeactivate(context: SceneActivationContext<undefined>): void {
-        this.elementoTexto?.remove()
+        
     }
 
 }

@@ -307,6 +307,39 @@ export class Player extends Actor {
 
 
         })
+
+        engine.input.keyboard.on("press", (event) =>{
+            
+            if(event.key == Keys.F && this.temObjetoProximo) {
+                
+                if(this.ultimoColisor?.owner.name == "mesa_stand_a"){
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor?.owner.name
+                        }
+                    })
+                }
+                if(this.ultimoColisor?.owner.name == "mesa_stand_b"){
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor?.owner.name
+                        }
+                    })
+                }
+                if(this.ultimoColisor?.owner.name == "mesa_stand_c"){
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor?.owner.name
+                        }
+                    })
+                }
+
+
+            }
+
+        })
+
+
     }
 
     onPreCollisionResolve(self: Collider, other: Collider, side: Side, contact: CollisionContact): void {

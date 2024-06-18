@@ -84,3 +84,40 @@ body {
 
         line-height: 2;
 }
+
+.case-gamifica {
+        width: 500px;
+        height: 600px;
+
+        padding: 40px;
+
+        background-color: #fff;
+
+        border: solid 15px #cf5830;
+        border-radius: 30px;
+
+        color: black;
+        font-family: "anta";
+
+        position: absolute;
+        top: 5%;
+        left: 5%;
+}
+
+.case-gamifica h2 {
+        margin-bottom: 40px;
+
+        font-size: 30px;
+        text-align: center;
+}
+
+.case-gamifica p {
+        font-size: 16px;
+        text-align: justify;
+
+        line-height: 1.5;
+}
+
+.displayNone {
+        display: none;
+}
