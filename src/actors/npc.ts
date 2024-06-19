@@ -135,8 +135,5 @@ export class Npc extends Actor {
         
     }
 
-    onInitialize(engine: Engine<any>): void {
-        
-    }
 }
 

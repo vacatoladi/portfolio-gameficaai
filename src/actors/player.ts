@@ -264,11 +264,7 @@ export class Player extends Actor {
 
                     this.ultimaDirecao = "down"
                     break;
-
-                case Keys.Enter:
-                    this.vel.x = 0
-                    this.vel.y = 0
-                    this.graphics.use("open-book")
+                    
                     
                     break;
 
@@ -332,6 +328,11 @@ export class Player extends Actor {
                             nomeDoActor: this.ultimoColisor?.owner.name
                         }
                     })
+                }
+                if(this.ultimoColisor?.owner.name == "estanteDeLivro_2e3" || this.ultimoColisor?.owner.name == "estanteDeLivro_1"){
+                    this.vel.x = 0
+                    this.vel.y = 0
+                    this.graphics.use("open-book")
                 }
 
 
